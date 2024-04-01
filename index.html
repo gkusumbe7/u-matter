@@ -1,29 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>U Matter</title>
 </head>
+
 <body>
-  <main class="flex">
-        <nav>
-            <div class="logo"><img src="https://umatter.netlify.app/images/home-img/logo.svg" alt="log-img" ></div>
-            <a href=""><i class="fas fa-home"></i><span>Home</span></a>
+    <main class="flex">
+        <nav class="flex flex-col  border border-black p-1 justify-around text-2xl from-stone-600">
+
+            <img src="https://umatter.netlify.app/images/home-img/logo.svg" alt="umatter-logo" class="h-16 m-7">
+            <a href=""><i class="fas fa-home nav-icon"></i><span>Home</span></a>
             <a href=""><i class="fas fa-music nav-icon"></i><span>Music</span></a>
             <a href=""><i class="fas fa-mountain nav-icon"></i><span>Scene</span></a>
             <a href=""><i class="fas fa-heartbeat nav-icon"></i><span>Relax & Breathe</span></a>
             <a href=""><i class="fas fa-comments nav-icon"></i><span>Talk To Hope</span></a>
+       
         </nav>
         
-        <section>
-                <div class="name-card">
-                    
+        <section class="">
+            <div class="">
+                <p>Good Evening, [Enter Name]</p>
+                <p>Keep going !</p>
+            </div>
+        
+            <div>
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
                 </div>
+        
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </div>
+        
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </div>
+            </div>    
+
         </section>
 
-  </main>
+        
+    </main>
+    <script src="./script.js">
+        
+    </script>
 </body>
+
 </html>
