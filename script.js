@@ -31,7 +31,7 @@ let musicSection =  document.getElementById("musicSection");
 console.log(homeNav , musicNav , homeSection , musicSection);
 
 homeNav.addEventListener("click",function(){
-    window.location="home.html";
+    window.location="index.html";
 })
 musicNav.addEventListener("click" , function(){
     window.location="music.html";
