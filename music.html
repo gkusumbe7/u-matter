@@ -2,53 +2,88 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/4fe777b2c0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/4fe777b2c0.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4fe777b2c0.js" crossorigin="anonymous"></script>
 </head>
-<body>    
+
+<body>
   <header class="text-gray-100 shadow-xl bg-gradient-to-r from-red-400 to-blue-600">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <img src="https://raw.githubusercontent.com/gkusumbe7/u-matter/main/assets/pngaaa.com-1473940.png" class="h-14" alt="meditation-logo">
+      <img src="https://raw.githubusercontent.com/gkusumbe7/u-matter/main/assets/pngaaa.com-1473940.png" class="h-14"
+        alt="meditation-logo">
       <span class="text-2xl p-1 font-serif xl:block font-bold shadow-xl lg:hidden m-1">HEALTHLINE</span>
 
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a id="homeNavSec" class=" mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Home</a>
-        <a id="musicNavSec" class=" mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans" >Music</a>
-        <a id="sceneNavSec" class="mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Scene</a>
-        <a id="relax" class="mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Relax & Breathe</a>
-        <a id="talktohope" class="hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Talk To Hope</a>
-     </nav>
+        <a id="homeNavSec"
+          class=" mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Home</a>
+        <a id="musicNavSec"
+          class=" mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Music</a>
+        <a id="sceneNavSec"
+          class="mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Scene</a>
+        <a id="relax"
+          class="mr-5 hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Relax
+          & Breathe</a>
+        <a id="talktohope"
+          class="hover:text-white font-bold hover:border-opacity-50 hover:border-white border border-opacity-5 rounded-xl p-1 shadow-xl font-sans">Talk
+          To Hope</a>
+      </nav>
     </div>
   </header>
-<script src="https://kit.fontawesome.com/4fe777b2c0.js" crossorigin="anonymous"></script>
-<script>
 
-     console.log("Music App")
-    document.getElementById("homeNavSec").addEventListener("click",function(){
- // console.log("Click ME Ganesh");
-    window.location="index.html";
+  <main>
+    <div class=" flex flex-col m-5  items-center justify-center">
+      <div class="musicCard shadow-xl  bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 justify-center items-center">
+        <img class="h-56" src="./assets/m6.jpg" alt="img">
+        <p class="text-3xl font-serif font-bold">Music Name</p>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <div>
+            <span id="currentTime">0:00</span>
+            <input class="w-56" type="range" id="progressBar" min="0" max="100" step="1" value="0">
+            <span id="totalTime">0:00</span>
+          </div>
+          <div class="flex justify-between w-44">
+            <i class="fa-solid fa-backward text-2xl "></i>
+            <i class="fa-solid fa-play text-2xl "></i>
+            <!-- <i class="fa-solid fa-pause text-2xl m-4"></i> -->
+            <i class="fa-solid fa-forward text-2xl "></i>
+          </div>
+          <div class="flex justify-around ">
+            <i class="fa-solid fa-volume-low text-xl m-2"></i>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            <i class="fa-solid fa-volume-high text-xl m-2"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <script>
+    console.log("Music App")
+    document.getElementById("homeNavSec").addEventListener("click", function () {
+      window.location = "index.html";
     })
 
-    document.getElementById("sceneNavSec").addEventListener("click" , function(){
-        window.location="scene.html";
+    document.getElementById("sceneNavSec").addEventListener("click", function () {
+      window.location = "scene.html";
     });
-    document.getElementById("relax").addEventListener("click" , function(){
-        window.location="relax.html";
+    document.getElementById("relax").addEventListener("click", function () {
+      window.location = "relax.html";
     });
-    document.getElementById("talktohope").addEventListener("click" , function(){
-        window.location="talktohope.html";
-    });
-    
-
-    // MUSIC PLAYER
-    
-
-        
-</script>
+    document.getElementById("talktohope").addEventListener("click", function () {
+      window.location = "talktohope.html";
+    });      
+  </script>
 </body>
+
 </html>
