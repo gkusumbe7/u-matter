@@ -12,9 +12,8 @@
   <script src="https://kit.fontawesome.com/4fe777b2c0.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-gradient-to-t from-green-200 via-green-300 to-blue-500 bg-no-repeat ">
   <header class="text-gray-100 shadow-xl bg-gradient-to-r from-red-400 to-blue-600">
-    <!-- card 1 -->
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <img src="https://raw.githubusercontent.com/gkusumbe7/u-matter/main/assets/pngaaa.com-1473940.png" class="h-14"
         alt="meditation-logo">
@@ -37,13 +36,13 @@
     </div>
   </header>
 
-  <main>
-    <div class="flex flex-col m-5 items-center justify-center gap-5 lg:flex-row lg:gap-6 lg:flex-wrap">
-
+  <main class="p-2">
+    <div class="flex flex-row flex-wrap items-center justify-center gap-5 lg:flex-row lg:gap-6 lg:flex-wrap">
+      <!-- Card 1 -->
       <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
-        <img class="h-56 xl:h-44" src="./assets/m6.jpg" alt="img">
-        <p class="text-3xl xl:text-2xl font-serif font-bold">Music Name</p>
-        <div class="flex flex-col justify-center items-center gap-5">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://umatter.netlify.app/images/music-images/nature-instrument/healing%20water.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Emerald Island</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
           <div>
             <audio id="audioPlayer"></audio>
             <span class="text-xl" id="currentTime">0:00</span>
@@ -61,15 +60,16 @@
             <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
             <i class="fa-solid fa-volume-high text-xl m-2"></i>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- card 2 -->
-      <div class=" musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
-        <img class="h-56 xl:h-44" src="./assets/m6.jpg" alt="img">
-        <p class="text-3xl xl:text-2xl font-serif font-bold">Music Name</p>
-        <div class="flex flex-col justify-center items-center gap-5">
+      <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Deep Meditation</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
           <div>
+            <audio id="audioPlayer"></audio>
             <span class="text-xl" id="currentTime">0:00</span>
             <input class="w-56 xl:w-36" type="range" id="progressBar" min="0" max="100" step="1" value="0">
             <span class="text-xl" id="totalTime">0:00</span>
@@ -77,7 +77,7 @@
           <div class="flex justify-between w-44">
             <i class="fa-solid fa-backward text-2xl "></i>
             <i class="fa-solid fa-play text-2xl "></i>
-            <!-- <i class="fa-solid fa-pause text-2xl m-4"></i> --> 
+            <i class="fa-solid fa-pause text-2xl"></i> 
             <i class="fa-solid fa-forward text-2xl "></i>
           </div>
           <div class="flex justify-around ">
@@ -85,15 +85,15 @@
             <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
             <i class="fa-solid fa-volume-high text-xl m-2"></i>
           </div>
-        </div>
+        </div> -->
       </div>
-
-      <!-- card 2 -->
-      <div class=" musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
-        <img class="h-56 xl:h-44" src="./assets/m6.jpg" alt="img">
-        <p class="text-3xl xl:text-2xl font-serif font-bold">Music Name</p>
-        <div class="flex flex-col justify-center items-center gap-5">
+      <!-- card 3 -->
+      <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://static.vecteezy.com/system/resources/thumbnails/029/305/259/small_2x/ai-generative-of-a-man-practicing-mindfulness-and-meditation-in-a-peaceful-natural-environment-sony-a7s-realistic-image-ultra-hd-high-design-very-detailed-photo.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Crystal Cave</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
           <div>
+            <audio id="audioPlayer"></audio>
             <span class="text-xl" id="currentTime">0:00</span>
             <input class="w-56 xl:w-36" type="range" id="progressBar" min="0" max="100" step="1" value="0">
             <span class="text-xl" id="totalTime">0:00</span>
@@ -101,7 +101,7 @@
           <div class="flex justify-between w-44">
             <i class="fa-solid fa-backward text-2xl "></i>
             <i class="fa-solid fa-play text-2xl "></i>
-            <!-- <i class="fa-solid fa-pause text-2xl m-4"></i> --> 
+            <i class="fa-solid fa-pause text-2xl"></i> 
             <i class="fa-solid fa-forward text-2xl "></i>
           </div>
           <div class="flex justify-around ">
@@ -109,11 +109,81 @@
             <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
             <i class="fa-solid fa-volume-high text-xl m-2"></i>
           </div>
-        </div>
+        </div> -->
+      </div>
+      <!-- Card 4 -->
+      <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://static.vecteezy.com/system/resources/thumbnails/038/266/241/small_2x/ai-generated-figure-of-a-man-meditating-in-a-quiet-and-beautiful-place-photo.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Timeless</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
+          <div>
+            <audio id="audioPlayer"></audio>
+            <span class="text-xl" id="currentTime">0:00</span>
+            <input class="w-56 xl:w-36" type="range" id="progressBar" min="0" max="100" step="1" value="0">
+            <span class="text-xl" id="totalTime">0:00</span>
+          </div>
+          <div class="flex justify-between w-44">
+            <i class="fa-solid fa-backward text-2xl "></i>
+            <i class="fa-solid fa-play text-2xl "></i>
+            <i class="fa-solid fa-pause text-2xl"></i> 
+            <i class="fa-solid fa-forward text-2xl "></i>
+          </div>
+          <div class="flex justify-around ">
+            <i class="fa-solid fa-volume-low text-xl m-2"></i>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            <i class="fa-solid fa-volume-high text-xl m-2"></i>
+          </div>
+        </div> -->
+      </div>
+      <!-- Card 5 -->
+      <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 " justify-center items-center">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://umatter.netlify.app/images/music-images/motivating/rise%20up.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Deva Premal</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
+          <div>
+            <audio id="audioPlayer"></audio>
+            <span class="text-xl" id="currentTime">0:00</span>
+            <input class="w-56 xl:w-36" type="range" id="progressBar" min="0" max="100" step="1" value="0">
+            <span class="text-xl" id="totalTime">0:00</span>
+          </div>
+          <div class="flex justify-between w-44">
+            <i class="fa-solid fa-backward text-2xl "></i>
+            <i class="fa-solid fa-play text-2xl "></i>
+            <i class="fa-solid fa-pause text-2xl"></i> 
+            <i class="fa-solid fa-forward text-2xl "></i>
+          </div>
+          <div class="flex justify-around ">
+            <i class="fa-solid fa-volume-low text-xl m-2"></i>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            <i class="fa-solid fa-volume-high text-xl m-2"></i>
+          </div>
+        </div> -->
+      </div>
+      <!-- Card 6 -->
+      <div class="musicCard shadow-xl border bg-gradient-to-t from-indigo-200 to-blue-800  p-2 flex flex-col gap-4 xl:gap-2 justify-center items-center">
+        <img class="h-64 w-72 xl:h-52 xl:w-56" src="https://umatter.netlify.app/images/music-images/instrumental/lifting%20dreams.jpg" alt="img">
+        <p class="text-3xl xl:text-2xl font-serif font-bold">Clair de Lune</p>
+        <!-- <div class="flex flex-col justify-center items-center gap-5">
+          <div>
+            <audio id="audioPlayer"></audio>
+            <span class="text-xl" id="currentTime">0:00</span>
+            <input class="w-56 xl:w-36" type="range" id="progressBar" min="0" max="100" step="1" value="0">
+            <span class="text-xl" id="totalTime">0:00</span>
+          </div>
+          <div class="flex justify-between w-44">
+            <i class="fa-solid fa-backward text-2xl "></i>
+            <i class="fa-solid fa-play text-2xl "></i>
+            <i class="fa-solid fa-pause text-2xl"></i> 
+            <i class="fa-solid fa-forward text-2xl "></i>
+          </div>
+          <div class="flex justify-around ">
+            <i class="fa-solid fa-volume-low text-xl m-2"></i>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            <i class="fa-solid fa-volume-high text-xl m-2"></i>
+          </div>
+        </div> -->
       </div>
   </main>
-
-
   <script>
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -146,9 +216,97 @@ document.addEventListener("DOMContentLoaded", function() {
   let forward = document.getElementsByClassName("fa-forward");
   let volumeControl = document.getElementById("volumeControl");
   
+  let divLength = document.querySelectorAll(`.musicCard`).length;
+  console.log(divLength);
+ 
+  for(var i = 0 ; i < divLength ; i++){
+      var musicCard = document.querySelectorAll(".musicCard")[i].addEventListener('click' , playSong)
+      var musicCard = document.querySelectorAll(".musicCard")[i].addEventListener('dblclick' , pauseSong)
+  };
 
+  var song1 = new Audio();
+  song1.src = "./assets/music-assets/rainy-day-in-town-with-birds-singing-194011.mp3";
+  
+  
+  var song2 = new Audio();
+  song2.src = "./assets/music-assets/lofi-study-112191.mp3";
+
+  var song3 = new Audio();
+  song3.src = "  ./assets/music-assets/rainy-day-in-town-with-birds-singing-194011.mp3";
+
+  var song4 = new Audio();
+  song4.src = "./assets/music-assets/night-moth-dramatic-cinematic-background-hip-hop-music-for-epic-video-198796.mp3";
+
+  var song5 = new Audio();
+  song5.src = "./assets/music-assets/please-calm-my-mind-125566.mp3";
+
+  var song6 = new Audio();
+  song6.src = "./assets/music-assets/rainy-day-in-town-with-birds-singing-194011.mp3";
+
+  // var song3 = new Audio();
+  // song3.src = "./assets/music-assets/relaxing-light-background-music-for-video-blog-cinematic-video-42-sec-198793.mp3";
+
+
+
+  function playSong(){
+    // console.log(this.innerText);
+    // song1.play();
+    var songID = this.innerText;
+    switch (songID) {
+      case "Emerald Island":
+        song1.play();
+        break;
+      case "Deep Meditation":
+        song2.play();
+        break;
+      case "Crystal Cave":
+        song3.play();
+        break;
+      case "Timeless":
+        song4.play();
+        break;
+      case "Deva Premal":
+        song5.play();
+        break;
+      case "Clair de Lune":
+        song6.play();
+        break
+      default:
+        alert("Error!");
+      break;
+    }
+    // switch(){
+    // }
+  }
+
+  function pauseSong(){  
+  var songID = this.innerText;
+    switch (songID) {
+      case "Emerald Island":
+        song1.pause();
+        break;
+      case "Deep Meditation":
+        song2.pause();
+        break;
+      case "Crystal Cave":
+        song3.pause();
+        break;
+      case "Timeless":
+        song4.pause();
+        break;
+      case "Deva Premal":
+        song5.pause();
+        break;
+      case "Clair de Lune":
+        song6.pause();
+        break
+      default:
+        alert("Error!");
+      break;
+    }
+  }
 });
   </script>
-</body>
 
+</body>
 </html>
